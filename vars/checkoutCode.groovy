@@ -10,4 +10,5 @@ def clear() {
     def workingDir = "${env.WORKSPACE}"
     echo "WORKSPACE: ${workingDir}"
     deleteDir()
+    return workingDir
 }
