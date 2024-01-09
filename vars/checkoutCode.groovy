@@ -6,3 +6,8 @@ def call(String repoUrl,String branch) {
 }
 
 
+def clear() {
+    def workingDir = "${env.WORKSPACE}"
+    echo "WORKSPACE: ${workingDir}"
+    deleteDir()
+}
